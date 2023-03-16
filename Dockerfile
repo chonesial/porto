@@ -1,4 +1,4 @@
-FROM ubuntu/apache2:latest
+FROM ubuntu/Apache2:latest
 RUN apt-get update -y
 
 COPY . /var/www/html
