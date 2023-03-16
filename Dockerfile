@@ -23,5 +23,3 @@ CMD ["apache2", "-D", "FOREGROUND"]
 RUN echo "Webserver turned on"
 
 
-
-RUN "ls -la /var/www/html"
