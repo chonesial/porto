@@ -1,6 +1,5 @@
 FROM httpd:latest
 RUN apt-get update -y
-RUN npm install
 
 WORKDIR /var/www/html
 RUN rm -f index.html
