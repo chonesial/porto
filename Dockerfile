@@ -1,6 +1,9 @@
 FROM httpd:latest
 RUN apt-get update -y
 
+WORKDIR /var/www/html
+RUN rm -f index.html
+
 COPY . /var/www/html
 
 # Echo message
