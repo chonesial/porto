@@ -1,7 +1,8 @@
 FROM httpd:latest
 RUN apt-get update -y
+RUN rm /usr/local/apache2/htdocs/index.html
 
-COPY . /usr/local/apache2
+COPY . /usr/local/apache2/htdocs
 
 # Echo message
 RUN echo "Files transferred"
