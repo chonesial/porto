@@ -1,10 +1,7 @@
 FROM httpd:latest
 RUN apt-get update -y
 
-WORKDIR /var/www/html
-RUN rm -f index.html
-
-COPY . /var/www/html
+COPY . /usr/local/apache2
 
 # Echo message
 RUN echo "Files transferred"
@@ -13,8 +10,6 @@ RUN echo "Files transferred"
 EXPOSE 80
 
 RUN apt-get update
-
-# Turn on Node.js and run in the background
 
 
 RUN echo "Background services started"
