@@ -21,6 +21,7 @@ RUN apt-get update
 RUN echo "Background services started"
 
 # Start Apache2
+CMD ["httpd-foreground"]
 
 # Echo message
 RUN echo "Webserver turned on"
